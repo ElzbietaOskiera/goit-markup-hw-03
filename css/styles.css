@@ -390,6 +390,8 @@ display: flex;
 .product {
   background-color: #ffffff;
 }
+.portfolio-image {vertical-align: top;}
+
 .product-name {
   font-weight: 700;
   line-height: calc(36 / 18);
