@@ -331,62 +331,72 @@ body {
 
 /*buttons on top - portfolio page*/
 
-.portfolio-button-list {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 50px;
-  gap: 8px;
+.button-style {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    padding-top: 94px;
+    padding-bottom: 50px;
+    padding-right: 513px;
 }
-.portfolio-button {
-  background: #f5f4fa;
-  border: #f5f4fa;
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: 500;
-  cursor: pointer;
+.button-list {
+    list-style-type: none;
+    display: flex;
+    width: 257px;
+    height: 54px;
+    padding: 6px 22px;
 }
-.portfolio-button {
-  cursor: pointer;
+.button-list button {
+    font-family: "Roboto";
+    color: #000000;
+    font-weight: 500;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    border: none;
+    margin: 0 4px;
+    padding: 6px 22px;
 }
-.portfolio-button:hover,
-.portfolio-button:focus {
-  color: var(--white-text);
-  background-color: #2196f3;
+.button-list button:focus,
+.button-list button:hover {
+    background-color: var(--accent-color);
+    color: #ffffff;
 }
 
 /*portfolio list - images*/
 
-.portfolio-items-list {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 3px;
+.photo-description{
+display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
 
-.portfolio-card {
-  margin: 0;
+.product-center {
+  padding-bottom: 94px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap:30px;
+    justify-content: center;
+    margin-bottom:94px;
+    padding-left:215px;
+    padding-right:215px;
 }
-
-.portfolio-image {
-  display: block;
+.product {
+  background-color: var(--logo-white);
 }
-
-.portfolio-card-text {
-  color: var(--main-normal-text-color);
-  font-size: 18px;
+.product-name {
   font-weight: 700;
-  line-height: 36px;
-}
-.name-portfolio {
-  font-weight: 700;
-  line-height: 2;
+  line-height: calc(36 / 18);
   letter-spacing: 0.06em;
-  color: var(--main-normal-text-color);
+  font-size: 18px;
 }
-
-.what-is {
-  line-height: 1.9;
-  letter-spacing: 0.03em;
-  color: var(--main-text-color);
+.product-description {
+  font-style: normal;
+    font-size: 16px;
+    color: var(--contacts-header-color);
 }
