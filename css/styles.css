@@ -388,7 +388,7 @@ display: flex;
     padding-right:215px;
 }
 .product {
-  background-color: var(--logo-white);
+  background-color: #ffffff;
 }
 .product-name {
   font-weight: 700;
