@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    list-style: none;
 }
 
 :root {
@@ -17,18 +18,22 @@
   --background-color: #2f303a;
 }
 .container {
-    display: inline;
-    align-items: center;
+    
     width: 1200px;
+    margin-left: auto;
+  margin-right: auto;
 }
 
 body {
   font-family: "Roboto", "Raleway", sans-serif;
   width: 1600px;
-  height: 2349px;
-  margin: auto;
+  
 }
 
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
 .navigation-menu {
@@ -40,7 +45,7 @@ body {
     height: 80px;
     border-bottom: 1px solid #ececec;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 .header-nav {
@@ -55,7 +60,7 @@ body {
 .navigation h2 {
     font-size: 26px;
     padding-right: 90px;
-    margin-left: 215px;
+    
 }
 .navigation a {
     text-decoration: none;
@@ -75,7 +80,6 @@ body {
     line-height: 24px;
     color: var(--contacts-header-color);
     padding-left: 372px;
-    margin-right: 227px;
     gap: 50px;
 }
 
@@ -86,7 +90,6 @@ body {
     color: var(--accent-color);
 }
 .footer-navigation {
-    list-style: none;
     width: 100%;
     height: 252px;
     background-color: var(--background-color);
@@ -105,7 +108,6 @@ body {
 .footer-navigation address {
     color: #ffffff;
     font-size: 14px;
-    padding-left: 215px;
 }
 .navigation-name {
     font-family: "Raleway";
@@ -124,7 +126,6 @@ body {
     font-weight: 700;
     font-size: 26px;
     padding-top: 60px;
-    padding-left: 215px;
     padding-bottom: 20px;
 }
 .logo-nav {
@@ -238,8 +239,6 @@ body {
     display: flex;
     list-style: none;
     justify-content: center;
-    padding-left:215px;
-    padding-right:215px;
     color:#212121
 }
 .descripion-primary {
@@ -285,11 +284,12 @@ body {
 
 .third-section {
     background-color: #f5f4fa;
-    height: 648px;
     padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .team {
+    padding-bottom: 50px;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.17;
@@ -300,7 +300,6 @@ body {
 
 .team-list{
   display: flex;
-  list-style: none;
   gap: 30px;
   justify-content: center;
 }
@@ -315,7 +314,7 @@ body {
   border-bottom-right-radius: 4px;
 }
 .pictures figcaption {text-align: center;
-  padding: 30px 70px;}
+  padding: 30px ;}
 
 .name {
   font-weight: 500;
@@ -331,38 +330,38 @@ body {
 
 /*buttons on top - portfolio page*/
 
-.button-style {
-    display: flex;
-    gap: 8px;
-    justify-content: center;
-    padding-top: 94px;
-    padding-bottom: 50px;
-    padding-right: 513px;
-}
+
+
 .button-list {
-    list-style-type: none;
-    display: flex;
-    width: 257px;
-    height: 54px;
-    padding: 6px 22px;
+  padding: 94px 0;
+  display: flex;
+  list-style: none;
+    gap: 8px;
+  justify-content: center;
 }
-.button-list button {
-    font-family: "Roboto";
-    color: #000000;
-    font-weight: 500;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #f5f4fa;
-    border-radius: 4px;
-    border: none;
-    margin: 0 4px;
-    padding: 6px 22px;
+
+
+.button-list > li > button {
+  font-weight: 500;
+  padding: 6px 22px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  color: var(--main-normal-text-color:);
+  line-height: calc(26 / 16);
+  letter-spacing: 00.03em;
+  cursor: pointer;
 }
-.button-list button:focus,
-.button-list button:hover {
-    background-color: var(--accent-color);
-    color: #ffffff;
+.button-list > li > button:hover {
+  background-color: #2196f3;
+  color: var(--white-text);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.button-list > li > button:focus {
+  background-color: #2196f3;
+  color: var(--white-text);
 }
 
 /*portfolio list - images*/
@@ -379,21 +378,21 @@ display: flex;
   padding-bottom: 94px;
     display: flex;
     flex-wrap: wrap;
-    list-style: none;
     gap:30px;
-    justify-content: center;
+    margin: 0 auto;
     margin-bottom:94px;
-    padding-left:215px;
-    padding-right:215px;
+    
 }
 .product {
   background-color: #ffffff;
+  padding-left: 0 15px;
+  padding-right: 0 15px;
 }
 .portfolio-image {vertical-align: top;}
 
 .product-name {
   font-weight: 700;
-  line-height: calc(36 / 18);
+  line-height: 2;
   letter-spacing: 0.06em;
   font-size: 18px;
 }
