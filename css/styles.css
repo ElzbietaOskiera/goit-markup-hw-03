@@ -337,7 +337,7 @@ body {
   font-size: 16px;
   border-radius: 4px;
   border: none;
-  color: var(--main-normal-text-color:);
+  color: var(--main-normal-text-color);
   line-height: calc(26 / 16);
   letter-spacing: 00.03em;
   cursor: pointer;
