@@ -182,41 +182,40 @@ body {
 
 /*Text on main page and button under */
 
-.main-header {
-    display: block;
-    margin: auto;
-    background-color: var(--background-color);
+.solutions {
+  display: flex;
+  background-color: var(--background-color);
+  flex-direction: column;
+  justify-content: center;
+  padding: 200px 200px;
 }
 
 .solution-main {
-  display: block;
-  font-weight: 900;
-  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 0.06em;
   font-size: 44px;
+  line-height: calc(60 / 44);
+  width: 696px;
   text-align: center;
-  color: var(--white-text);
+  align-self: center;
+  padding-bottom: 15px;
 }
 
-.solutions {
-  display: block;
-    text-align: center;
-    padding: 200px 452px 280px 452px;
-  background-color: #2f303a;
-}
 
 .button-order {
-  text-align: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  padding: 10px 42px;
+  color: white;
   border-radius: 4px;
+  background-color: #2196f3;;
+  align-self: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
-  padding: 10px 41px 10px 42px;
   margin-top: 30px;
   font-size: 16px;
-  line-height: 30px;
   font-weight: 700;
   cursor: pointer;
-  background-color: #2196f3;
-  color: #ffffff;
 }
 
 .button-order:hover,
@@ -320,14 +319,12 @@ body {
 
 /*buttons on top - portfolio page*/
 
-
-
 .button-list {
-  padding: 94px 0;
   display: flex;
-  list-style: none;
-    gap: 8px;
+  gap: 8px;
   justify-content: center;
+  padding: 94px 0;
+  padding-bottom: 50px;
 }
 
 
@@ -337,7 +334,7 @@ body {
   font-size: 16px;
   border-radius: 4px;
   border: none;
-  color: var(--main-normal-text-color);
+  color: var(--main-font-color);
   line-height: calc(26 / 16);
   letter-spacing: 00.03em;
   cursor: pointer;
