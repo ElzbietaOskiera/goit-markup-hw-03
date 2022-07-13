@@ -90,6 +90,7 @@ body {
     color: var(--accent-color);
 }
 .footer-navigation {
+  padding-left: 30px;
     padding-bottom: 60px;
     background-color: var(--background-color);
 }
@@ -229,13 +230,18 @@ body {
     padding-top: 94px;
 }
 .description {
+
     display: flex;
-    list-style: none;
-    justify-content: center;
-    color:#212121
+    gap: 30px;
+    align-items: center;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  
 }
 .descripion-primary {
-    display: flex;
+  
+    
 }
 .descripion-title {
     font-weight: 700;
@@ -243,6 +249,7 @@ body {
     line-height: 1.14;
 }
 .description-text {
+  font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     padding-top:10px;
@@ -362,7 +369,7 @@ display: flex;
 }
 
 .product-center {
-  padding-bottom: 94px;
+
     display: flex;
     flex-wrap: wrap;
     gap:30px;
