@@ -100,11 +100,14 @@ body {
   gap: 50px;
 }
 
+
 .navigation a:focus,
 .navigation a:hover,
+.contact-links-header a:focus,
+.contact-links-header a:hover,
 .footer-navigation a:focus,
 .footer-navigation a:hover {
-  color: var(--accent-color);
+  color: var(--blue-color);
 }
 
 .footer-navigation {
@@ -153,10 +156,6 @@ body {
     padding-bottom: 20px;
 }
 
-.logo-nav {
-    font-weight: 700;
-    font-size: 26px;
-}
 
 .address {
     font-style: normal;
